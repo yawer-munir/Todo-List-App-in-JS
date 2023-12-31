@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{ 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+}
+.container{
+    padding: 1rem;
+    background-color: rgba(131, 94, 125, 0.671);
+    width: 60vw;
+    height: 80vh;
+    border-radius: 0.5rem;
+}
+/* #########   form   ########*/
+.todo-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 60px;
+}
+.todo-form input{
+    height: 50px;
+    width: 40vw;
+    border-radius: 5px;
+}
+.todo-form button{
+    /* display: flex; */
+    height: 40px;
+    width: 12vw;
+}
+ 
+
+
+/* #####   todo list   ##### */
+.todo-list li{ 
+    background-color:#444;
+    list-style-type: none;
+    color: white;
+    min-width: 15.5rem;
+    margin-top:0.5rem ;
+    padding: 10px;
+    border-radius: 4px;
+    width: 55vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.todo-list li .remove{
+    margin-left: 5px;
+}
+
+.list-item li{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.text{
+    width: 60%;
+}
+ button{
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+ }
+ .todo-list button{
+    align-items:right;
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  /* MEDIA QUERIES */
+
+@media screen  and (max-width:600px){
+    .todo-list li{ 
+        width: 20vw;
+        height: 30px;
+    }
+}
+
